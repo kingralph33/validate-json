@@ -1,0 +1,29 @@
+{
+  "name": "json_playwright",
+  "version": "0.0.1",
+  "description": "Playwright template with Eslint, Prettier, and Typescript",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@9.1.0",
+  "scripts": {
+    "format": "pnpm exec prettier . --write",
+    "lint": "pnpm eslint",
+    "lint:fix": "pnpm eslint --fix",
+    "test": "pnpm exec playwright test",
+    "tsc": "pnpm tsc"
+  },
+  "keywords": [],
+  "author": "Ralph King Jr (https://kingralph.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.10",
+    "eslint": "^9.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.1.0",
+    "prettier": "3.2.5",
+    "typescript-eslint": "^7.8.0"
+  }
+}
