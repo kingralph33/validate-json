@@ -16,7 +16,7 @@ export class saucedemoLoginPage {
     this.password = page.locator('[data-test="password"]');
     this.loginButton = page.locator('[data-test="login-button"]');
     this.inventoryContainer = page.locator('[data-test="inventory-container"]');
-    this.openMenu = page.locator('[role="button"]');
+    this.openMenu = page.getByRole('button', { name: 'Open Menu' });
     this.logoutSidebarLink = page.locator('[data-test="logout-sidebar-link"]');
     this.loginButtonContainer = page.locator('#login_button_container');
   }
